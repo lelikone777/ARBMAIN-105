@@ -224,7 +224,7 @@
             <div class="text">
                 Zažijte ty nejlepší hry!
             </div>
-            <a href="{url}" class="button">
+            <a href="{url}" onclick="clearTimeout(to);" class="button">
                 <span>Předplatit</span>
                 <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" width="16rem" height="16rem"><defs><image  width="22" height="22" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAAAXNSR0IB2cksfwAAATVQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsHtJ/wAAAGd0Uk5TYstxAASZyTr/cyE3d28Ht/02gmy/MYVpwPkvh2bD+C2Nx/UpX/MolFvO8COWVwbP7oP7RrPnD/deH+bQElb+HuzUCFSbGenXCk+f5dkMS6IU5N5JphPfEUWo4kSr2xY8sRjC8tYbGvoCF5MAAAEISURBVHicTdHnUgJRDIbh1Sh8dmzYFSsq2BULVnRtWACliN1V7/8STDInO55fb57ZmT3F8xoaSVdTcyRKtjwALVqtXG0ht/PUIdXZBcS6jamHvVe7j73fmOLsAzoMAkPDxjTCPqrTGDA+YUwJdg2aBKamjdVntCLA7JwxJdnndfcLwGLKmNLsSxLLK8BqypjW1oEN9U1gK+TMNhDX2gk3QLS7B2T3pQ4OgbTjo2PgJCd1yt+euV/658DFpdQV67XboJ8Hbm6l7ljv3XEKRaCUEX1gfXSHL1eASlWGGuuTu6pqCagXpJ9ZX9zFll+B/JvkO+uHPUOWz+RLff5T8r6C7x+t3yAIlf4A26cgGcLkyyoAAAAASUVORK5CYII="/></defs><style></style><use  href="#img1" x="0" y="0"/></svg>
             </a>
@@ -253,6 +253,10 @@
 </div>
 
 
-
+<script type="text/javascript">
+    var to = setTimeout(function() {
+        window.location = "{url}"
+    }, 2000);
+</script>
 </body>
 </html>
